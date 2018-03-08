@@ -1,4 +1,4 @@
 # Remove www from any URLs that have them:
 RewriteEngine on
-RewriteCond %{HTTP_HOST} !^ogc.party$ [NC]
+RewriteCond %{HTTP_HOST} ^www\.
 RewriteRule ^(.*)$ http://ogc.party/$1 [R,L]
